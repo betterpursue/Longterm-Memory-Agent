@@ -1,0 +1,11 @@
+# 核心
+openai>=1.0
+numpy
+faiss-cpu>=1.7.0
+sentence-transformers>=2.2.0
+
+# 可选：vLLM（本地部署 LLM）
+# vllm>=0.4.0
+
+# 可选：Judge 评测（由 eval_kit 提供）
+# 无额外依赖

@@ -1,0 +1,500 @@
+=== Phase 1 FULL RERUN Mon Jun  1 16:18:26 CST 2026 ===
+--- [01_no_memory] START Mon Jun  1 16:18:26 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[01_no_memory] Baseline: No-memory (无检索, LLM直接回答)
+  Agent: memory_agent.agent.controller:NoMemoryAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/01_no_memory.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=memory_agent.agent.controller:NoMemoryAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.4s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.0s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.1s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.0s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.0s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.0s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.0s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.0s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.0s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    [ingest] skipped (no-memory baseline)
+    ingest 耗时 0.0s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/01_no_memory.json
+  
+  Done in 89.0s
+  Predictions: 40, errors: 0, avg latency: 0.31s
+
+============================================================
+All experiments completed. Results saved to:
+  01_no_memory: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/01_no_memory.json
+--- [01_no_memory] OK Mon Jun  1 16:19:55 CST 2026 ---
+--- [02_full_context] START Mon Jun  1 16:19:55 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[02_full_context] Baseline: Full-context (全部对话历史塞入 prompt)
+  Agent: agent_template:FullContextAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/02_full_context.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=agent_template:FullContextAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    ingest 耗时 9.0s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    ingest 耗时 0.0s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    ingest 耗时 0.0s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    ingest 耗时 0.0s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    ingest 耗时 0.0s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    ingest 耗时 0.0s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    ingest 耗时 0.0s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    ingest 耗时 0.0s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    ingest 耗时 0.0s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    ingest 耗时 0.0s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/02_full_context.json
+  
+  Done in 144.3s
+  Predictions: 40, errors: 40, avg latency: 3.36s
+
+============================================================
+All experiments completed. Results saved to:
+  02_full_context: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/02_full_context.json
+--- [02_full_context] OK Mon Jun  1 16:22:20 CST 2026 ---
+--- [03_vanilla_rag] START Mon Jun  1 16:22:20 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[03_vanilla_rag] Baseline: Vanilla RAG (原始对话切片 + 稠密检索)
+  Agent: vanilla_rag_agent:VanillaRAGAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/03_vanilla_rag.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=vanilla_rag_agent:VanillaRAGAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    ingest 耗时 72.0s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    ingest 耗时 3.0s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    ingest 耗时 4.2s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    ingest 耗时 4.8s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    ingest 耗时 3.5s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    ingest 耗时 3.6s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    ingest 耗时 5.0s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    ingest 耗时 3.3s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    ingest 耗时 3.5s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    ingest 耗时 3.2s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/03_vanilla_rag.json
+  
+  Done in 154.3s
+  Predictions: 40, errors: 0, avg latency: 0.93s
+
+============================================================
+All experiments completed. Results saved to:
+  03_vanilla_rag: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/03_vanilla_rag.json
+--- [03_vanilla_rag] OK Mon Jun  1 16:24:54 CST 2026 ---
+--- [04_dense_only] START Mon Jun  1 16:24:54 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[04_dense_only] Ablation A1: 纯稠密检索 (Dense Only, no forgetting)
+  Agent: memory_agent.agent.controller:DenseOnlyAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/04_dense_only.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=memory_agent.agent.controller:DenseOnlyAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    [ingest] cache hit: 123 memories (conv-26)
+    ingest 耗时 9.0s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    [ingest] cache hit: 115 memories (conv-30)
+    ingest 耗时 3.4s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    [ingest] 32 sessions, 627 memories, 0 empty, 0 retried
+    ingest 耗时 195.0s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    [ingest] 29 sessions, 510 memories, 0 empty, 0 retried
+    ingest 耗时 217.2s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    [ingest] 29 sessions, 591 memories, 0 empty, 0 retried
+    ingest 耗时 223.3s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    [ingest] 28 sessions, 534 memories, 0 empty, 0 retried
+    ingest 耗时 337.5s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    [ingest] 31 sessions, 574 memories, 0 empty, 0 retried
+    ingest 耗时 222.9s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    [ingest] 30 sessions, 585 memories, 0 empty, 0 retried
+    ingest 耗时 244.6s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    [ingest] 25 sessions, 457 memories, 0 empty, 0 retried
+    ingest 耗时 168.6s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    [ingest] 30 sessions, 496 memories, 0 empty, 0 retried
+    ingest 耗时 204.7s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/04_dense_only.json
+  
+  Done in 1931.4s
+  Predictions: 40, errors: 0, avg latency: 0.67s
+
+============================================================
+All experiments completed. Results saved to:
+  04_dense_only: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/04_dense_only.json
+--- [04_dense_only] OK Mon Jun  1 16:57:06 CST 2026 ---
+--- [05_threefactor] START Mon Jun  1 16:57:06 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[05_threefactor] Ablation A2: 三因子检索 (ThreeFactor, no forgetting)
+  Agent: memory_agent.agent.controller:ThreeFactorAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/05_threefactor.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=memory_agent.agent.controller:ThreeFactorAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    [ingest] cache hit: 123 memories (conv-26)
+    ingest 耗时 9.9s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    [ingest] cache hit: 115 memories (conv-30)
+    ingest 耗时 2.7s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    [ingest] cache hit: 627 memories (conv-41)
+    ingest 耗时 2.7s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    [ingest] cache hit: 510 memories (conv-42)
+    ingest 耗时 2.5s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    [ingest] cache hit: 591 memories (conv-43)
+    ingest 耗时 2.8s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    [ingest] cache hit: 534 memories (conv-44)
+    ingest 耗时 3.4s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    [ingest] cache hit: 574 memories (conv-47)
+    ingest 耗时 2.7s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    [ingest] cache hit: 585 memories (conv-48)
+    ingest 耗时 2.7s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    [ingest] cache hit: 457 memories (conv-49)
+    ingest 耗时 2.8s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    [ingest] cache hit: 496 memories (conv-50)
+    ingest 耗时 2.6s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/05_threefactor.json
+  
+  Done in 141.0s
+  Predictions: 40, errors: 0, avg latency: 0.62s
+
+============================================================
+All experiments completed. Results saved to:
+  05_threefactor: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/05_threefactor.json
+--- [05_threefactor] OK Mon Jun  1 16:59:27 CST 2026 ---
+--- [06_no_forgetting] START Mon Jun  1 16:59:27 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[06_no_forgetting] Ablation B1: 无遗忘 (ThreeFactor, NoOpUpdater)
+  Agent: memory_agent.agent.controller:ThreeFactorAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/06_no_forgetting.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=memory_agent.agent.controller:ThreeFactorAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    [ingest] cache hit: 123 memories (conv-26)
+    ingest 耗时 9.5s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    [ingest] cache hit: 115 memories (conv-30)
+    ingest 耗时 2.6s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    [ingest] cache hit: 627 memories (conv-41)
+    ingest 耗时 2.7s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    [ingest] cache hit: 510 memories (conv-42)
+    ingest 耗时 2.7s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    [ingest] cache hit: 591 memories (conv-43)
+    ingest 耗时 3.0s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    [ingest] cache hit: 534 memories (conv-44)
+    ingest 耗时 3.7s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    [ingest] cache hit: 574 memories (conv-47)
+    ingest 耗时 2.6s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    [ingest] cache hit: 585 memories (conv-48)
+    ingest 耗时 2.6s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    [ingest] cache hit: 457 memories (conv-49)
+    ingest 耗时 2.9s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    [ingest] cache hit: 496 memories (conv-50)
+    ingest 耗时 2.6s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/06_no_forgetting.json
+  
+  Done in 135.1s
+  Predictions: 40, errors: 0, avg latency: 0.64s
+
+============================================================
+All experiments completed. Results saved to:
+  06_no_forgetting: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/06_no_forgetting.json
+--- [06_no_forgetting] OK Mon Jun  1 17:01:42 CST 2026 ---
+--- [07_with_forgetting] START Mon Jun  1 17:01:42 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[07_with_forgetting] Ablation B2: 遗忘曲线 (ThreeFactor + Ebbinghaus)
+  Agent: memory_agent.agent.controller:ThreeFactorForgettingAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/07_with_forgetting.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=memory_agent.agent.controller:ThreeFactorForgettingAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    [ingest] cache hit: 123 memories (conv-26)
+    ingest 耗时 9.5s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    [ingest] cache hit: 115 memories (conv-30)
+    ingest 耗时 2.5s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    [ingest] cache hit: 627 memories (conv-41)
+    ingest 耗时 2.5s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    [ingest] cache hit: 510 memories (conv-42)
+    ingest 耗时 2.5s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    [ingest] cache hit: 591 memories (conv-43)
+    ingest 耗时 2.5s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    [ingest] cache hit: 534 memories (conv-44)
+    ingest 耗时 3.6s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    [ingest] cache hit: 574 memories (conv-47)
+    ingest 耗时 2.5s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    [ingest] cache hit: 585 memories (conv-48)
+    ingest 耗时 2.5s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    [ingest] cache hit: 457 memories (conv-49)
+    ingest 耗时 2.7s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    [ingest] cache hit: 496 memories (conv-50)
+    ingest 耗时 2.5s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/07_with_forgetting.json
+  
+  Done in 133.2s
+  Predictions: 40, errors: 0, avg latency: 0.61s
+
+============================================================
+All experiments completed. Results saved to:
+  07_with_forgetting: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/07_with_forgetting.json
+--- [07_with_forgetting] OK Mon Jun  1 17:03:56 CST 2026 ---
+--- [08_full_system] START Mon Jun  1 17:03:56 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[08_full_system] Primary: Writer + Dense retrieval (主评测路径)
+  Agent: memory_agent.agent.controller:DenseOnlyAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/08_full_system.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=memory_agent.agent.controller:DenseOnlyAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    [ingest] cache hit: 123 memories (conv-26)
+    ingest 耗时 8.4s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    [ingest] cache hit: 115 memories (conv-30)
+    ingest 耗时 2.5s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    [ingest] cache hit: 627 memories (conv-41)
+    ingest 耗时 2.8s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    [ingest] cache hit: 510 memories (conv-42)
+    ingest 耗时 2.5s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    [ingest] cache hit: 591 memories (conv-43)
+    ingest 耗时 2.6s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    [ingest] cache hit: 534 memories (conv-44)
+    ingest 耗时 3.6s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    [ingest] cache hit: 574 memories (conv-47)
+    ingest 耗时 2.6s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    [ingest] cache hit: 585 memories (conv-48)
+    ingest 耗时 3.7s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    [ingest] cache hit: 457 memories (conv-49)
+    ingest 耗时 2.8s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    [ingest] cache hit: 496 memories (conv-50)
+    ingest 耗时 3.4s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/08_full_system.json
+  
+  Done in 130.6s
+  Predictions: 40, errors: 0, avg latency: 0.65s
+
+============================================================
+All experiments completed. Results saved to:
+  08_full_system: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/08_full_system.json
+--- [08_full_system] OK Mon Jun  1 17:06:06 CST 2026 ---
+--- [09_forgetting_joint] START Mon Jun  1 17:06:06 CST 2026 ---
+Evaluation set: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/eval_kit/eval_set.json
+Experiments to run: 1
+
+============================================================
+[09_forgetting_joint] Ablation B2: 三因子 + 遗忘曲线 (ForgettingRetriever)
+  Agent: memory_agent.agent.controller:MyMemoryAgent
+  Output: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/09_forgetting_joint.json
+============================================================
+  [初始化] 共 10 段对话，40 题，Agent=memory_agent.agent.controller:MyMemoryAgent
+  [1/10] conv-26：正在 ingest 19 个 session ...
+    [ingest] cache hit: 123 memories (conv-26)
+    ingest 耗时 8.5s，回答了 5 题，进度 5/40
+  [2/10] conv-30：正在 ingest 19 个 session ...
+    [ingest] cache hit: 115 memories (conv-30)
+    ingest 耗时 2.5s，回答了 6 题，进度 11/40
+  [3/10] conv-41：正在 ingest 32 个 session ...
+    [ingest] cache hit: 627 memories (conv-41)
+    ingest 耗时 2.6s，回答了 1 题，进度 12/40
+  [4/10] conv-42：正在 ingest 29 个 session ...
+    [ingest] cache hit: 510 memories (conv-42)
+    ingest 耗时 2.5s，回答了 8 题，进度 20/40
+  [5/10] conv-43：正在 ingest 29 个 session ...
+    [ingest] cache hit: 591 memories (conv-43)
+    ingest 耗时 2.5s，回答了 6 题，进度 26/40
+  [6/10] conv-44：正在 ingest 28 个 session ...
+    [ingest] cache hit: 534 memories (conv-44)
+    ingest 耗时 2.7s，回答了 1 题，进度 27/40
+  [7/10] conv-47：正在 ingest 31 个 session ...
+    [ingest] cache hit: 574 memories (conv-47)
+    ingest 耗时 3.8s，回答了 3 题，进度 30/40
+  [8/10] conv-48：正在 ingest 30 个 session ...
+    [ingest] cache hit: 585 memories (conv-48)
+    ingest 耗时 4.3s，回答了 2 题，进度 32/40
+  [9/10] conv-49：正在 ingest 25 个 session ...
+    [ingest] cache hit: 457 memories (conv-49)
+    ingest 耗时 2.8s，回答了 5 题，进度 37/40
+  [10/10] conv-50：正在 ingest 30 个 session ...
+    [ingest] cache hit: 496 memories (conv-50)
+    ingest 耗时 2.8s，回答了 3 题，进度 40/40
+  [完成] 共保存 40 条预测 -> /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/09_forgetting_joint.json
+  
+  Done in 131.2s
+  Predictions: 40, errors: 0, avg latency: 0.66s
+
+============================================================
+All experiments completed. Results saved to:
+  09_forgetting_joint: /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/09_forgetting_joint.json
+--- [09_forgetting_joint] OK Mon Jun  1 17:08:18 CST 2026 ---
+=== Judge Mon Jun  1 17:08:18 CST 2026 ===
+已写入 /mnt/d/A new start/自然语言处理/大作业 长期记忆agent/memory_agent/experiments/results/summary_table.md
+# 实验汇总
+
+## 总体
+
+| 实验 | 题数 | 得分 | F1 | EM | 平均延迟(s) | 错误 |
+|------|------|------|-----|-----|-------------|------|
+| 08_full_system | 11 | 0.955 | 0.692 | 0.364 | 1.946 | 0 |
+| 08_full_system_restored | 11 | 0.955 | 0.692 | 0.364 | 1.946 | 0 |
+| 03_vanilla_rag | 11 | 0.273 | 0.040 | 0.000 | 0.802 | 0 |
+| 01_no_memory | 40 | 0.000 | 0.000 | 0.000 | 8.352 | 0 |
+| 02_full_context | 40 | 0.000 | 0.000 | 0.000 | 8.177 | 40 |
+| 04_dense_only | 40 | 0.000 | 0.000 | 0.000 | 2.374 | 0 |
+| 05_threefactor | 40 | 0.000 | 0.000 | 0.000 | 2.484 | 0 |
+| 06_no_forgetting | 40 | 0.000 | 0.000 | 0.000 | 2.386 | 0 |
+| 07_with_forgetting | 40 | 0.000 | 0.000 | 0.000 | 2.543 | 0 |
+| 09_forgetting_joint | 40 | 0.000 | 0.000 | 0.000 | 2.636 | 0 |
+
+## 分题型得分
+
+| 实验 | single_hop | temporal | multi_hop | open_domain |
+|------|------|------|------|------|
+| 08_full_system | 1.000 | 1.000 | 1.000 | 0.833 |
+| 08_full_system_restored | 1.000 | 1.000 | 1.000 | 0.833 |
+| 03_vanilla_rag | 0.500 | 0.125 | 0.000 | 0.667 |
+| 01_no_memory | 0.000 | 0.000 | 0.000 | 0.000 |
+| 02_full_context | 0.000 | 0.000 | 0.000 | 0.000 |
+| 04_dense_only | 0.000 | 0.000 | 0.000 | 0.000 |
+| 05_threefactor | 0.000 | 0.000 | 0.000 | 0.000 |
+| 06_no_forgetting | 0.000 | 0.000 | 0.000 | 0.000 |
+| 07_with_forgetting | 0.000 | 0.000 | 0.000 | 0.000 |
+| 09_forgetting_joint | 0.000 | 0.000 | 0.000 | 0.000 |
+
+[skip] 01_no_memory_judge.json 已存在
+[skip] 02_full_context_judge.json 已存在
+[skip] 03_vanilla_rag_judge.json 已存在
+[skip] 04_dense_only_judge.json 已存在
+[skip] 05_threefactor_judge.json 已存在
+[skip] 06_no_forgetting_judge.json 已存在
+[skip] 07_with_forgetting_judge.json 已存在
+[skip] 08_full_system_judge.json 已存在
+[skip] 08_full_system_restored_judge.json 已存在
+[skip] 09_forgetting_joint_judge.json 已存在
+已写入 experiments/results/summary_table.md
+# 实验汇总
+
+## 总体
+
+| 实验 | 题数 | 得分 | F1 | EM | 平均延迟(s) | 错误 |
+|------|------|------|-----|-----|-------------|------|
+| 08_full_system | 11 | 0.955 | 0.692 | 0.364 | 1.946 | 0 |
+| 08_full_system_restored | 11 | 0.955 | 0.692 | 0.364 | 1.946 | 0 |
+| 03_vanilla_rag | 11 | 0.273 | 0.040 | 0.000 | 0.802 | 0 |
+| 01_no_memory | 40 | 0.000 | 0.000 | 0.000 | 8.352 | 0 |
+| 02_full_context | 40 | 0.000 | 0.000 | 0.000 | 8.177 | 40 |
+| 04_dense_only | 40 | 0.000 | 0.000 | 0.000 | 2.374 | 0 |
+| 05_threefactor | 40 | 0.000 | 0.000 | 0.000 | 2.484 | 0 |
+| 06_no_forgetting | 40 | 0.000 | 0.000 | 0.000 | 2.386 | 0 |
+| 07_with_forgetting | 40 | 0.000 | 0.000 | 0.000 | 2.543 | 0 |
+| 09_forgetting_joint | 40 | 0.000 | 0.000 | 0.000 | 2.636 | 0 |
+
+## 分题型得分
+
+| 实验 | single_hop | temporal | multi_hop | open_domain |
+|------|------|------|------|------|
+| 08_full_system | 1.000 | 1.000 | 1.000 | 0.833 |
+| 08_full_system_restored | 1.000 | 1.000 | 1.000 | 0.833 |
+| 03_vanilla_rag | 0.500 | 0.125 | 0.000 | 0.667 |
+| 01_no_memory | 0.000 | 0.000 | 0.000 | 0.000 |
+| 02_full_context | 0.000 | 0.000 | 0.000 | 0.000 |
+| 04_dense_only | 0.000 | 0.000 | 0.000 | 0.000 |
+| 05_threefactor | 0.000 | 0.000 | 0.000 | 0.000 |
+| 06_no_forgetting | 0.000 | 0.000 | 0.000 | 0.000 |
+| 07_with_forgetting | 0.000 | 0.000 | 0.000 | 0.000 |
+| 09_forgetting_joint | 0.000 | 0.000 | 0.000 | 0.000 |
+
+=== Phase 1 COMPLETE Mon Jun  1 17:08:18 CST 2026 ===

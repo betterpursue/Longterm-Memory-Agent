@@ -1,0 +1,52 @@
+[
+  {
+    "qa_id": "conv-26_q11",
+    "question": "Where did Caroline move from 4 years ago?",
+    "reference": "Sweden",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 1.346
+  },
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 1.507
+  },
+  {
+    "qa_id": "conv-26_q27",
+    "question": "Would Caroline pursue writing as a career option?",
+    "reference": "LIkely no; though she likes reading, she wants to be a counselor",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 1.084
+  },
+  {
+    "qa_id": "conv-26_q30",
+    "question": "Would Melanie be considered a member of the LGBTQ community?",
+    "reference": "Likely no, she does not refer to herself as part of it",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 1.155
+  },
+  {
+    "qa_id": "conv-26_q77",
+    "question": "Would Melanie go on another roadtrip soon?",
+    "reference": "Likely no; since this one went badly",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 1.076
+  }
+]

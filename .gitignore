@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# 环境变量（含 API Key）
+memory_agent/env.sh
+*.env
+
+# 模型文件（太大）
+models/
+
+# ingest 缓存（可自动再生）
+memory_agent/experiments/ingest_cache/
+
+# macOS 系统文件
+.DS_Store
+
+# VS Code
+.vscode/
+
+# 临时调试文件
+_test_*.py
+debug_*.py
+_check_*.py
+_build_*.py
+_diff_temp.txt
+
+# 临时导出的 AI 对话
+cursor_project_issues_and_improvement_p.md
+
+# 本地副本目录
+一些文件/
+
+# 旧版报告草稿
+memory_agent/report.html
+memory_agent/report.md
+report_full.md
+
+# 根目录 PDF（仅保留 memory_agent/ 内的）
+/report.pdf
+
+# 非 judge 的预测 JSON（只保留 judge 结果 + summary）
+memory_agent/experiments/results/*.json
+!memory_agent/experiments/results/*_judge.json
+memory_agent/experiments/results/full_200/*.json
+!memory_agent/experiments/results/full_200/*_judge.json
+
+# LaTeX 编译临时文件
+*.aux
+*.log
+*.out
+*.toc
+
+# 含个人信息的文件（本地保留，不上传）
+Milestone_*.html
+Milestone_*.md
+Milestone_*.pdf
+Proposal_*.pdf
+proposal.md
+report_full.md
+工作进展说明.md
+四篇必读文献精读笔记.md
+
+proposal.md
+
+# 含个人信息的文件（本地保留，不上传）
+Milestone_*.html
+Milestone_*.md
+Milestone_*.pdf
+Proposal_*.pdf
+proposal.md
+
+# 旧版报告草稿（已被 .tex/.pdf 取代）
+memory_agent/report.html
+memory_agent/report.md
+
+# 非 judge 的预测 JSON（只保留 judge 结果 + summary）
+memory_agent/experiments/results/*.json
+!memory_agent/experiments/results/*_judge.json
+memory_agent/experiments/results/full_200/*.json
+!memory_agent/experiments/results/full_200/*_judge.json
+
+# LaTeX 编译临时文件
+*.aux
+*.log
+*.out
+*.toc
